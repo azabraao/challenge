@@ -5,16 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Eccomerce</title>
-        <link type="text/css" rel="stylesheet" href="assets/index.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
     <body>
+        <span class="background-overlay"></span>
         <header class="site-header">
             <div class="container">
                 <div class="site-header__content">
+                    <div class="site-header__hamburguer-wrap no-desktop">
+                        <a href="#" class="site-header__hamburguer js-hamburguer-toggle">
+                            <span class="site-header__hamburguer-line"></span>
+                            <span class="site-header__hamburguer-line"></span>
+                            <span class="site-header__hamburguer-line"></span>
+                        </a>
+                    </div> 
+                    <div class="site-header__responsive-nav" style=" display: none;">
+                        <div class="site-header__responsive-nav-header">
+                            <div class="container">
+                                <a href="#" class="site-header__responsive-nav-hamburguer js-hamburguer-toggle">
+                                    <span class="site-header__hamburguer-line"></span>
+                                    <span class="site-header__hamburguer-line"></span>
+                                    <span class="site-header__hamburguer-line"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <nav class="site-header__responsive-nav-items">
+                            <a href="#" class="is-uppercase site-header__responsive-nav-item">perfumaria</a>
+                            <a href="#" class="is-uppercase site-header__responsive-nav-item">maquiagem</a>
+                            <a href="#" class="is-uppercase site-header__responsive-nav-item">cabelos</a>
+                            <a href="#" class="is-uppercase site-header__responsive-nav-item">infantil</a>
+                        </nav>
+                    </div>  
+                                          
                     <div class="site-header__logo">
                         <a href="/" class="is-uppercase is-bold">Minha loja</a>
                     </div>
-                    <nav class="site-header__nav-items">
+                    <nav class="site-header__nav-items desktop-only">
                         <a href="#" class="is-uppercase site-header__nav-item">perfumaria</a>
                         <a href="#" class="is-uppercase site-header__nav-item">maquiagem</a>
                         <a href="#" class="is-uppercase site-header__nav-item">cabelos</a>
@@ -22,12 +49,14 @@
                     </nav>
                     <div class="site-header__cart">
                         <a href="#" class="site-header__cart-wrap" title="Cart exibition">
-                            <picture>
-                                <img src="assets/img/cart.png" alt="Cart icon">
-                            </picture>
+                            <span class="site-header__cart-icon-holder">
+                                <picture>
+                                    <img src="assets/img/cart.png" alt="Cart icon">
+                                </picture>
+                                <span class="site-header__cart-total">R$ <span class="site-header__cart-total-price">00,00</span></span>
+                            </span>
                         </a>
-                        <span class="site-header__cart-total"></span>
-                    </div>
+                    </div>                       
                 </div>
             </div>
         </header>
@@ -119,6 +148,7 @@
             </div>
         </section>
 
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="assets/js/index.js"></script>
     </body>
 </html>

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.js-hamburguer-toggle').on('click',function(e){
+        $('.site-header__responsive-nav').toggle();
+        $('.background-overlay').toggle();
+    });
+    $('.background-overlay').on('click',function(e){
+        $('.site-header__responsive-nav').toggle();
+        $('.background-overlay').toggle();
+    });
+});
