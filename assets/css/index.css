@@ -94,15 +94,14 @@ a {
     border-radius: 30px;
     padding: .3em 1em;
 }
-.site-header__cart-icon-holder picture {
-    margin-right: 10px;
-}
 .site-header__cart-icon-holder picture img {
     max-width: 90%;
 }
 .site-header__cart-total {
+    display: none;
     font-size: .9em;
     margin-top: 1px;
+    margin-left: 10px;
 }
 .site-header__hamburguer-line:first-child {
     width: 15px;

@@ -24,5 +24,6 @@ $(document).ready(function(){
     $('.js-product').on('click', function(){
         total += parseFloat(this.dataset.price);
         $('.js-cart-total').text(total.toLocaleString());
+        $('.site-header__cart-total').show();
     });
 });
