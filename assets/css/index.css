@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: .5s;
 }
 
 :root {
@@ -92,6 +93,12 @@ a {
 .site-header__cart-total {
     font-size: .9em;
     margin-top: 1px;
+}
+.site-header__hamburguer-line:first-child {
+    width: 15px;
+}
+.site-header__hamburguer-line:last-child {
+    width: 13px;
 }
 .site-header__hamburguer-line {
     width: 20px;
